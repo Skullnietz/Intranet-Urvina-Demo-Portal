@@ -9,4 +9,7 @@ class CatalogoController extends Controller
     public function index(){
         return view('catalogo');
     }
+    public function indexCategoria(){
+        return view('categoria');
+    }
 }

@@ -26,6 +26,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 //Catalogo
 Route::get('/catalogo', [CatalogoController::class, 'index'])->name('catalogo');
+Route::get('/categoria', [CatalogoController::class, 'indexCategoria'])->name('categoria');
 
 //Consultas Clientes
 Route::get('/consultas', [ConsultasCController::class, 'index'])->name('consultasc');

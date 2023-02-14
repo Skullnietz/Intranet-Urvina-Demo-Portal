@@ -3,11 +3,19 @@
 @section('title', 'Inicio')
 
 @section('content_header')
-    <h1>Categoria</h1>
+    <h1>Categoria [name]</h1>
 @stop
 
 @section('content')
-    <p>Vista Categoria</p>
+<div class="card">
+    <div class="card-header">
+
+    </div>
+    <div class="card-body">
+
+    </div>
+
+</div>
 @stop
 
 @section('css')
