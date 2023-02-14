@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CatalogoController;
+use App\Http\Controllers\ConsultasCController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,9 +16,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
 Auth::routes();
 
+// Inicio
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+//Catalogo
+Route::get('/catalogo', [CatalogoController::class, 'index'])->name('catalogo');
+
+//Consultas Clientes
+Route::get('/consultas', [ConsultasCController::class, 'index'])->name('consultasc');

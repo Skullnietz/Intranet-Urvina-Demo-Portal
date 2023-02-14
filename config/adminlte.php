@@ -129,7 +129,7 @@ return [
     */
 
     'usermenu_enabled' => true,
-    'usermenu_header' => false,
+    'usermenu_header' => true,
     'usermenu_header_class' => 'bg-primary',
     'usermenu_image' => false,
     'usermenu_desc' => false,
@@ -290,10 +290,105 @@ return [
 
     'menu' => [
         // Navbar items:
-
+        [
+            'text'        => 'EPP',
+            'url'         => 'admin/pages',
+            'icon_color' => 'green',
+            'label_color' => 'success',
+            'submenu' => [
+                        [
+                            'text'  => 'Equipo de Proteccion Ocular',
+                            'url'  => 'menu/child1',
+                        ],
+                        [
+                            'text'  => 'Equipo de Proteccion Torax',
+                            'url'  => 'menu/child1',
+                        ],
+                ],
+            'topnav_right' => true,
+        ],
+        [
+            'text'        => 'Guantes',
+            'url'         => 'admin/pages',
+            'icon_color' => 'green',
+            'label_color' => 'success',
+            'submenu' => [
+                        [
+                            'text'  => 'Guantes Combinados',
+                            'url'  => 'menu/child1',
+                        ],
+                        [
+                            'text'  => 'Guantes Guanteletas',
+                            'url'  => 'menu/child1',
+                        ],
+                        [
+                            'text'  => 'Guantes Recubiertos',
+                            'url'  => 'menu/child1',
+                        ],
+                ],
+            'topnav_right' => true,
+        ],
+        [
+            'text'        => 'Otros',
+            'url'         => 'admin/pages',
+            'icon_color' => 'green',
+            'label_color' => 'success',
+            'submenu' => [
+                        [
+                            'text'  => 'Auditiva',
+                            'url'  => 'menu/child1',
+                        ],
+                        [
+                            'text'  => 'Facial',
+                            'url'  => 'menu/child1',
+                        ],
+                        [
+                            'text'  => 'Respiratoria',
+                            'url'  => 'menu/child1',
+                        ],
+                        [
+                            'text'  => 'Lavadas',
+                            'url'  => 'menu/child1',
+                        ],
+                        [
+                            'text'  => 'A Cabeza',
+                            'url'  => 'menu/child1',
+                        ],
+                        [
+                            'text'  => 'A Extremidades Inferiores',
+                            'url'  => 'menu/child1',
+                        ],
+                        [
+                            'text'  => 'A Manos y Brazos',
+                            'url'  => 'menu/child1',
+                        ],
+                        [
+                            'text'  => 'Al Tronco',
+                            'url'  => 'menu/child1',
+                        ],
+                        [
+                            'text'  => 'Ropa De Proteccion Otros',
+                            'url'  => 'menu/child1',
+                        ],
+                        [
+                            'text'  => 'Tecnicos',
+                            'url'  => 'menu/child1',
+                        ],
+                ],
+            'topnav_right' => true,
+        ],
         [
             'type'         => 'fullscreen-widget',
             'topnav_right' => true,
+        ],
+        [
+            'text'        => '',
+            'url'         => 'admin/pages',
+            'icon'        => 'fas fa-fw fa-shopping-cart',
+            'icon_color' => 'green',
+            'label_color' => 'success',
+            'topnav_right' => true,
+
         ],
 
         // Sidebar items:
@@ -304,21 +399,21 @@ return [
         ],
         [
             'text'        => 'Inicio',
-            'url'         => 'admin/pages',
+            'route'         => 'home',
             'icon'        => 'fas fa-fw fa-home',
             'icon_color' => 'green',
             'label_color' => 'success',
         ],
         [
             'text'        => 'Catálogo',
-            'url'         => 'admin/pages',
+            'route'         => 'catalogo',
             'icon'        => 'fas fa-fw fa-boxes',
             'icon_color' => 'green',
             'label_color' => 'success',
         ],
         [
             'text'        => 'Consultas del Cliente',
-            'url'         => 'admin/pages',
+            'route'         => 'consultasc',
             'icon'        => 'fas fa-fw fa-users',
             'icon_color' => 'green',
             'label_color' => 'success',
@@ -368,7 +463,7 @@ return [
 
     'plugins' => [
         'Datatables' => [
-            'active' => false,
+            'active' => true,
             'files' => [
                 [
                     'type' => 'js',
@@ -388,7 +483,7 @@ return [
             ],
         ],
         'Select2' => [
-            'active' => false,
+            'active' => true,
             'files' => [
                 [
                     'type' => 'js',
@@ -413,7 +508,7 @@ return [
             ],
         ],
         'Sweetalert2' => [
-            'active' => false,
+            'active' => true,
             'files' => [
                 [
                     'type' => 'js',

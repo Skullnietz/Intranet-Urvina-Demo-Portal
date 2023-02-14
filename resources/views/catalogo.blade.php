@@ -3,11 +3,11 @@
 @section('title', 'Inicio')
 
 @section('content_header')
-    <h1>Inicio</h1>
+    <h1>Catalogo</h1>
 @stop
 
 @section('content')
-    <p>Panel de inicio</p>
+    <p>Vista Catalogo</p>
 @stop
 
 @section('css')
