@@ -39,7 +39,7 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col-12">
                 <div class="card">
                     <div class="card-header bg-success mb-3">
                         <center>
@@ -48,12 +48,12 @@
                     </div>
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-md-6 col-xs-12">
                                 <center>
-                                    <img src="img/productos/casco-blanco.jpg" alt="casco" style="width:450px">
+                                    <img class="border rounded" src="img/productos/casco-blanco.jpg" alt="casco" style="width:350px">
                                 </center>
                             </div>
-                            <div class="col-6">
+                            <div class="col-md-6 col-xs-12">
                                 <table class="table table-striped rounded">
                                     <tr>
                                         <td class="border"><b>Articulo:</b></td>
@@ -117,8 +117,8 @@
                                     <span class="form-control" aria-describedby="inputGroup-sizing-default">pza</span>
                                 </div><br>
                                 <center>
-                                    <button class="btn btn-success btn-lg"><i class="fas fa-shopping-cart"></i> |
-                                        Comprar</button>
+                                    <a href="{{route('carrito')}}" class="btn btn-success btn-lg"><i class="fas fa-shopping-cart"></i> |
+                                        Comprar</a>
                                 </center>
 
 

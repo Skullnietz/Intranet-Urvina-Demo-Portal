@@ -64,7 +64,7 @@
         <div class="card-body">
 
             <div class="row">
-                <div class="col">
+                <div class="col-md-6 col-xs-12" >
                     <a href="{{route('item')}}" >
                     <div class="card grow">
                         <div class="card-body">
@@ -81,7 +81,7 @@
                     </div>
                 </a>
                 </div>
-                <div class="col">
+                <div class="col-md-6 col-xs-12" >
                     <a href="{{route('item')}}" >
                     <div class="card grow" >
                         <div class="card-body">
@@ -98,6 +98,7 @@
                 </a>
                 </div>
             </div>
+
 
         </div>
 

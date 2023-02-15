@@ -291,6 +291,10 @@ return [
     'menu' => [
         // Navbar items:
         [
+            'text'        => 'Categorias',
+            'url'         => 'admin/pages',
+            'submenu' => [
+        [
             'text'        => 'EPP',
             'url'         => 'admin/pages',
             'icon_color' => 'green',
@@ -326,7 +330,7 @@ return [
                             'url'  => 'menu/child1',
                         ],
                 ],
-            'topnav_right' => true,
+
         ],
         [
             'text'        => 'Otros',
@@ -375,15 +379,16 @@ return [
                             'url'  => 'menu/child1',
                         ],
                 ],
-            'topnav_right' => true,
-        ],
+
+        ], ],
+        'topnav_right' => true,],
         [
             'type'         => 'fullscreen-widget',
             'topnav_right' => true,
         ],
         [
             'text'        => '',
-            'url'         => 'admin/pages',
+            'route'       => 'carrito',
             'icon'        => 'fas fa-fw fa-shopping-cart',
             'icon_color' => 'green',
             'label_color' => 'success',
