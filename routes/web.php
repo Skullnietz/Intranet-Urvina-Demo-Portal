@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CatalogoController;
 use App\Http\Controllers\ConsultasCController;
+use App\Http\Controllers\CarritoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +28,10 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 //Catalogo
 Route::get('/catalogo', [CatalogoController::class, 'index'])->name('catalogo');
 Route::get('/categoria', [CatalogoController::class, 'indexCategoria'])->name('categoria');
+Route::get('/item', [CatalogoController::class, 'showItem'])->name('item');
+
+//Carrito
+Route::get('/cart',[CarritoController::class, 'index'])->name('carrito');
 
 //Consultas Clientes
 Route::get('/consultas', [ConsultasCController::class, 'index'])->name('consultasc');

@@ -12,4 +12,7 @@ class CatalogoController extends Controller
     public function indexCategoria(){
         return view('categoria');
     }
+    public function showItem(){
+        return view('item');
+    }
 }
