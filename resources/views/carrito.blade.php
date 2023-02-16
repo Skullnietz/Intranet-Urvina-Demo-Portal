@@ -168,7 +168,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary">Confirmar</button>
+          <a href="{{route('postcompra')}}" type="button" class="btn btn-primary">Confirmar</a>
         </div>
       </div>
     </div>

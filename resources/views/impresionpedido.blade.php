@@ -27,9 +27,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 </head>
-<style>
 
+<style media="print">
+     #btnimprimir {
+        display:none;
+     }
 </style>
+
 
 <body>
     <div class="container">
@@ -77,13 +81,15 @@
             <div class="col-1 border rounded" style="text-align:left;"><b style="margin-left:-10px"> Cantidad </b></div>
         </div>
         <!-- Articulo -->
+        <br>
         <div class="row">
             <div class="col-2 border rounded" style="text-align:center">SGG2-032</div>
             <div class="col-2 border rounded" style="text-align:center">0382-1D04</div>
             <div class="col-7 border rounded" style="text-align:center">GUANTE DE NYLON REC. DE NITRILO EN PALMA Y DORSO MOD. 1400 SAFE FIT [6]</div>
-            <div class="col-1 border rounded" style="text-align:center"></div>
+            <div class="col-1 border rounded" style="text-align:center">10</div>
         </div>
         <!-- Importe, Impuesto, Total, Moneda -->
+        <br>
         <div class="row">
             <div class="col-5 border rounded" style="text-align:right"><b></b></div>
             <div class="col-2 border rounded" style="text-align:right"><b>Importe: $34.16</b></div>
@@ -92,6 +98,7 @@
             <div class="col-1 border rounded" style="text-align:center"><b>USD</b></div>
         </div>
         <!-- Observaciones -->
+        <br>
         <div class="row">
             <div class="col-2" style="text-align:right"> Observaciones: </div>
             <div class="col-10 border rounded"></div>
@@ -99,7 +106,22 @@
         <br>
         <br>
     </div>
+    <br><br>
+    <center>
+        <button id="btnimprimir" onclick="printHTML()" class="btn btn-success"> Imprimir </button>
+    </center>
+
 
 </body>
+<script>
+    function printHTML() {
+  if (window.print) {
+    window.print();
+  }
+}
+document.addEventListener("DOMContentLoaded", function(event) {
+  printHTML();
+});
+  </script>
 
 </html>

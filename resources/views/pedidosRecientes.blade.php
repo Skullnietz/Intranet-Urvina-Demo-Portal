@@ -1,13 +1,58 @@
 @extends('adminlte::page')
 
-@section('title', 'Inicio')
+@section('title', 'Detalles de compra')
 
 @section('content_header')
-    <h1>Inicio</h1>
+    <h1>Detalles de Compra</h1>
 @stop
 
 @section('content')
-    <p>Panel de inicio</p>
+
+    <div class="container">
+         <!-- Pedido Pesos -->
+            <div class="card">
+                <div class="row"></div>
+                <div class="col-12 "><br>
+                    <center>
+                        <div class="border rounded">
+                            <b>Su Pedido en Pesos fué levantado correctamente con numero:</b>  <br>
+                                           <b style="color:blue; font-size:25px">RAA715</b>
+                        </div>
+                    </center>
+                    <br>
+                    <div class="row">
+                        <div class="col-4"></div>
+                        <div class="col-4"><a href="" class="btn btn-primary"> Cancelar</a>&nbsp;&nbsp;<a href="{{route('printpedido')}}" target="_blank" class="btn btn-primary"> Imprimir</a>&nbsp;&nbsp;<a href="" class="btn btn-primary"> Continuar</a></div>
+                        <div class="col-4"></div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <!-- FIN Pedido Pesos -->
+            <!-- Pedido Dolares -->
+
+            <div class="card">
+                <div class="row"></div>
+                <div class="col-12 "><br>
+                    <center>
+                        <div class="border rounded">
+                            <b>Su Pedido en Dolares fué levantado correctamente con numero:</b>  <br>
+                                           <b style="color:blue; font-size:25px">RAA715</b>
+                        </div>
+                    </center>
+                    <br>
+                    <div class="row">
+                        <div class="col-4"></div>
+                        <div class="col-4"><a href="" class="btn btn-primary"> Cancelar</a>&nbsp;&nbsp;<a href="{{route('printpedido')}}" target="_blank" class="btn btn-primary"> Imprimir</a>&nbsp;&nbsp;<a href="" class="btn btn-primary"> Continuar</a></div>
+                        <div class="col-4"></div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <!-- FIN Pedido Dolares -->
+
+
+    </div>
 @stop
 
 @section('right-sidebar')
