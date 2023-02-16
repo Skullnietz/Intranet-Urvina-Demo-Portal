@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CatalogoController;
 use App\Http\Controllers\ConsultasCController;
 use App\Http\Controllers\CarritoController;
+use App\Http\Controllers\PedidosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,6 +33,10 @@ Route::get('/item', [CatalogoController::class, 'showItem'])->name('item');
 
 //Carrito
 Route::get('/cart',[CarritoController::class, 'index'])->name('carrito');
+Route::get('/postcompra',[CarritoController::class, 'postcompra'])->name('postcompra');
+
+//Pedidos
+Route::get('/impresion',[PedidosController::class, 'impresion'])->name('printpedido');
 
 //Consultas Clientes
 Route::get('/consultas', [ConsultasCController::class, 'index'])->name('consultasc');

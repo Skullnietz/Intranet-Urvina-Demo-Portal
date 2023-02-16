@@ -1,9 +1,13 @@
 @extends('adminlte::page')
 
-@section('title', 'Consultas')
+@section('title', 'Inicio')
 
 @section('content_header')
-    <h1>Consultas Cliente</h1>
+    <h1>Inicio</h1>
+@stop
+
+@section('content')
+    <p>Panel de inicio</p>
 @stop
 
 @section('right-sidebar')
@@ -34,10 +38,6 @@
 </center>
 
 
-@stop
-
-@section('content')
-    <p>Vista Consultas Cliente</p>
 @stop
 
 @section('css')

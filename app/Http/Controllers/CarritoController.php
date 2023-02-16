@@ -9,4 +9,7 @@ class CarritoController extends Controller
     public function index(){
         return view('carrito');
     }
+    public function postcompra(){
+        return view('pedidosRecientes');
+    }
 }
