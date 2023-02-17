@@ -3,7 +3,17 @@
 @section('title', 'Detalles de compra')
 
 @section('content_header')
-    <h1>Detalles de Compra</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-6"><h1>Detalles de compra</h1></div>
+        <div class="col-6"> <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
+            </div>
+            <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
+          </div></div>
+    </div>
+</div>
 @stop
 
 @section('content')

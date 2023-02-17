@@ -1,19 +1,13 @@
 @extends('adminlte::page')
 
-@section('title', 'Consultas')
+@section('title', 'Inicio')
 
 @section('content_header')
-<div class="container">
-    <div class="row">
-        <div class="col-6"><h1>Consultas del Cliente</h1></div>
-        <div class="col-6"> <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
-            </div>
-            <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
-          </div></div>
-    </div>
-</div>
+    <h1>Inicio</h1>
+@stop
+
+@section('content')
+    <p>Panel de inicio</p>
 @stop
 
 @section('right-sidebar')
@@ -44,10 +38,6 @@
 </center>
 
 
-@stop
-
-@section('content')
-    <p>Vista Consultas Cliente</p>
 @stop
 
 @section('css')
